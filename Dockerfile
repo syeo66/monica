@@ -14,4 +14,6 @@ RUN set -ex; \
 
 COPY supervisord.conf /etc/supervisord.conf
 
+ENV REDEPLOY 8
+
 CMD ["supervisord", "-c", "/etc/supervisord.conf"]
